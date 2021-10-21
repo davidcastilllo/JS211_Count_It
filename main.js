@@ -28,7 +28,8 @@ let sort = () => {
   /*Lastly we are converting an object to observable date that we can display on the DOM*/
 
  let str = JSON.stringify(Count).split(',').join('  ')
- let div = document.getElementById('sorted')
+ let div = document.getElementById('sorted') 
+ div.innerHTML = ''
  div.append(str)
 document.body.appendChild(div)
 }
